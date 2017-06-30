@@ -1,0 +1,11 @@
+agm-map {
+  height: 400px;
+}
+
+.map_key li{
+  display: inline;
+}
+
+.keys{
+  background: #66687e;
+}

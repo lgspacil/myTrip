@@ -1,0 +1,25 @@
+<div class="parent-div">
+  <div class="info_div">
+    <!--{{displayMarkerInfo | json}}-->
+    <button class="btn btn-danger btn-xs" (click)="closeViewInfo()">X</button>
+    <div class="well well-lg">
+      <h1 style="text-align:left;float:left;">{{displayMarkerInfo.location_name}}</h1> 
+      <h3 style="text-align:right;float:right;">${{displayMarkerInfo.price}}</h3> 
+      <hr style="clear:both;"/>
+
+      <h4 class="text-info">Day Number: {{displayMarkerInfo.day_number}}</h4>
+
+      <p>{{displayMarkerInfo.content}}</p>
+
+       <div class="image-selection">
+        <img class="mySlides" src={{displayMarkerInfo.images[0]}}  style="width:100%">
+        <img class="mySlides" src={{displayMarkerInfo.images[1]}}  style="width:100%">
+        <img class="mySlides" src={{displayMarkerInfo.images[2]}}  style="width:100%">
+      </div>
+
+    </div>
+
+   
+
+  </div>
+</div>
